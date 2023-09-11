@@ -4,8 +4,9 @@ import GameGrid from './components/GameGrid'
 import GenreList from './components/GenreList'
 import { useState } from 'react'
 import { Genre } from './hooks/useGenres'
-import PlatformSelector from './components/platformSelector'
 import { PlatForm } from './hooks/useGames'
+import PlatformSelector from './components/PlatformSelector'
+import SortSelector from './components/SortSelector'
 
 export interface GameQuery {
   genre: Genre | null;
@@ -27,6 +28,7 @@ function App() {
     </Show>
     <GridItem area='main'>
       <PlatformSelector selectedPlatform={gameQuery.platform} onSelectedPlatform={(platform) => setGameQuery({ ...gameQuery, platform })} />
+      <SortSelector />
       <GameGrid gameQuery={gameQuery} />
     </GridItem>
   </Grid>
