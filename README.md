@@ -1,2 +1,2 @@
 # game-hup
-https://game-4uoqqtm21-mahmoudalikhider.vercel.app/
+https://game-hup-mahmoudalikhider.vercel.app/
